@@ -1,0 +1,1 @@
+cmd_Release/obj.target/ConfigCenter.node := flock ./Release/linker.lock g++ -shared -pthread -rdynamic -m64  -Wl,-soname=ConfigCenter.node -o Release/obj.target/ConfigCenter.node -Wl,--start-group Release/obj.target/ConfigCenter/ConfigCenter.o -Wl,--end-group 
